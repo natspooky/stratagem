@@ -1,0 +1,92 @@
+:root {
+	--themecol: #4c64ba;
+
+	--bgColor-default: #010409;
+	--bgColor-muted: #161b22;
+	--bgColor-inset: #0d1117;
+
+	--fgColor-default: #e6edf3;
+	--fgColor-muted: #848d97;
+	--fgColor-onEmphasis: #ffffff;
+
+	--borderColor: #30363db3;
+	--borderColor-default: #30363d;
+	--borderColor-muted: #30363db3;
+	--borderColor-emphasis: #484f58;
+
+	--SSC: #8157de;
+	--PDS: #489ed4;
+	--CLS: #21cc8a;
+	--VPS: #6467ff;
+	--PSS: #ff4f4f;
+	--CMS: #ff9e49;
+	--GIS: #fc64ff;
+	--CDS: #000;
+	--SSM: #000;
+
+	--CELLAR: #ab6e38;
+	--ARCHIVE: #bd9351;
+	--ARC: #4192c4;
+}
+@font-face {
+	font-family: 'Plus Jakarta Sans';
+	src: url(../font/PlusJakartaSans-ExtraBold.ttf);
+}
+.jakarta {
+	font-family: 'Plus Jakarta Sans', serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body #loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--fgColor-default);
+}
+body #loader svg {
+	position: relative;
+	width: 10vmin;
+	height: 10vmin;
+	fill: var(--bgColor-default);
+	margin-right: 10px;
+}
+
+body #loader p {
+	font-size: 10vmin;
+}
+
+body #loader h1 {
+	font-size: 2vmin;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+}
+
+body #loader::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: var(--fgColor-default);
+	opacity: 1;
+	transition: 2s;
+}
+body.loaded #loader::after {
+	opacity: 0;
+}
