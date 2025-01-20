@@ -32,12 +32,6 @@
 	font-family: 'Plus Jakarta Sans';
 	src: url(../font/PlusJakartaSans-ExtraBold.ttf);
 }
-.jakarta {
-	font-family: 'Plus Jakarta Sans', serif;
-	font-optical-sizing: auto;
-	font-weight: 800;
-	font-style: normal;
-}
 * {
 	margin: 0;
 	padding: 0;
@@ -45,6 +39,12 @@
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+}
+.jakarta {
+	font-family: 'Plus Jakarta Sans', serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
 }
 body #loader {
 	position: fixed;
