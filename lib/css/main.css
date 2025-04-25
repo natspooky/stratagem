@@ -73,13 +73,6 @@ body #loader p {
 	font-size: 10vmin;
 }
 
-body #loader h1 {
-	font-size: 2vmin;
-	position: absolute;
-	bottom: 5px;
-	left: 10px;
-}
-
 body #loader::after {
 	content: '';
 	width: 100%;
