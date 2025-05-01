@@ -122,7 +122,7 @@ function readFile(file_path, contentType, res) {
 			res.end();
 		});
 	} else {
-		readFile(__dirname + '\\404.html', 'text/html', res);
+		readFile(__dirname + '\\dummy.txt', 'text/plain', res);
 	}
 }
 

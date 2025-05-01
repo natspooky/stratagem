@@ -32,6 +32,10 @@
 	font-family: 'Plus Jakarta Sans';
 	src: url(../font/PlusJakartaSans-ExtraBold.ttf);
 }
+@font-face {
+	font-family: 'FS Sinclair';
+	src: url(../font/FS-Sinclair-Regular.otf);
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -98,6 +102,89 @@ canvas {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.stratagem {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 5px 10px;
+	font-family: 'FS Sinclair', serif;
+	font-optical-sizing: auto;
+	font-weight: 800;
+	font-style: normal;
+	display: flex;
+	align-items: center;
+}
+
+.stratIcon {
+	position: relative;
+	width: 35px;
+	height: 35px;
+	border: 2px solid transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	margin-right: 10px;
+	transition: opacity 0.5s;
+}
+
+.stratIcon::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
+
+.stratIcon.blue {
+	border: 2px solid #49adc9;
+}
+.stratIcon.blue::before {
+	background-color: #49adc920;
+}
+.stratIcon.red {
+	border: 2px solid #de7b6c;
+}
+.stratIcon.red::before {
+	background-color: #de7b6c20;
+}
+.stratIcon.green {
+	border: 2px solid #679552;
+}
+.stratIcon.green::before {
+	background-color: #67955220;
+}
+.stratIcon img {
+	position: relative;
+}
+
+.stratTextCont {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.stratTextCont h1 {
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.stratArrowCont {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	padding: 0 5px 0 -5px;
+}
+.stratArrowCont img {
+	position: relative;
+	width: 12px;
+	height: 12px;
+	margin: 1px 2px;
 }
 
 @keyframes load {
